@@ -1,0 +1,129 @@
+body {
+  margin: 0;
+  /* box-sizing: border-box; */
+}
+
+.wrapper {
+  background: rgb(233, 228, 228);
+}
+
+.hero {
+  color: white;
+  width: 400px;
+  background: rgba(150, 140, 140, 0.323);
+
+  text-align: center;
+
+  /* align-items: center; */
+  padding: 2rem;
+
+  z-index: 10;
+  backdrop-filter: blur(5px);
+}
+
+.img1 {
+  background: grey url(./assets/nature.jpg) no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+}
+
+.img2 {
+  background: grey url(./assets/nature.jpg) no-repeat center center;
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img3 {
+  background: grey url(./assets/nature.jpg) no-repeat center center;
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img4 {
+  background: grey url(./assets/nature.jpg) no-repeat center center;
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.img5 {
+  background: grey url(./assets/nature.jpg) no-repeat center center;
+  width: 100%;
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5 {
+  background-attachment: fixed;
+}
+.title {
+  background: rgba(150, 140, 140, 0.721);
+  color: white;
+
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  font-size: 3rem;
+
+  padding: 30px 50px;
+}
+
+section {
+  width: 80%;
+  margin: auto;
+}
+
+.round {
+  width: 100px;
+  height: 100px;
+  background: radial-gradient(yellow, green);
+
+  border-radius: 50%;
+  position: absolute;
+  top: 310px;
+  left: 300px;
+}
+
+.down-arrow {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+
+  position: absolute;
+  bottom: 80px;
+  padding-bottom: 10px;
+
+  transform: rotate(90deg);
+
+  animation: go-down 1s infinite;
+}
+
+@keyframes go-down {
+  0% {
+    bottom: 80px;
+  }
+  100% {
+    bottom: 10px;
+    color: green;
+  }
+}
